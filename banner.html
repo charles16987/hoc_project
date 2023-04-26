@@ -94,7 +94,7 @@
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="banner.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-copy-alt"></i>
                 <div data-i18n="Analytics">Banner</div>
@@ -106,7 +106,6 @@
                 <div data-i18n="Analytics">Vendors</div>
               </a>
             </li>
-            
             <li class="menu-item">
               <a href="category.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-hive"></i>
@@ -119,7 +118,7 @@
                 <div data-i18n="Analytics">Sub-Category</div>
               </a>
             </li>
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="order.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-smile"></i>
                 <div data-i18n="Analytics">Orders</div>
@@ -239,146 +238,103 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="demo-inline-spacing d-flex justify-content-end mb-3">
-                <a href="order.html">
-                  <button type="button" class="btn btn-dark rounded-pill">
-                    <i class='bx bx-exit'></i> back
-                  </button>
-                </a>
-              </div>
-              <div class="row">
-                <div class="col-xl-12">
-                  <div class="card mb-4">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Order Details</h5>
-                      <i class='bx bx-pencil' ></i>
-                    </div>
-                    <div class="card-body py-0">
-                      <form>
+
+            <div class="container-xxl flex-grow-1 container-p-y"> 
+              <div class="card">
+                <div class="card-header">
+                  <h5 >Banner</h5>
+                  <a href="#">
+                    <button type="button" class="btn rounded-pill btn-primary" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                      <span class="tf-icons bx bx-plus"></span>&nbsp; Add
+                    </button>
+                  </a>
+                  
+                </div>
+                 <!-- Modal -->
+                 <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-12 mb-3">
+                            <label for="nameWithTitle" class="form-label">Name</label>
+                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Name">
+                          </div>
+                          <div class="col-12 mb-3">
                             <div class="mb-3">
-                              <label class="form-label m-0" for="order-no">Order No</label>
-                              <span class="d-block font-weight-600">#0001</span>
+                              <label for="html5-datetime-local-input" class="col-md-2 col-form-label">EXPIRED AT</label>
+                        <div class="col-md-12">
+                          <input class="form-control" type="datetime-local" value="2021-06-18T12:30:00" id="html5-datetime-local-input">
+                        </div>
                             </div>
                           </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="customer">Customer</label>
-                              <span class="d-block font-weight-600">John Doe</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider-name">Rider Name</label>
-                              <span class="d-block font-weight-600">Bala</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="price">Price</label>
-                              <span class="d-block font-weight-600">$1000</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="discount">Discount</label>
-                              <span class="d-block font-weight-600">25%</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="order-at">Order At</label>
-                              <span class="d-block font-weight-600">01:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider">Rider Piced At</label>
-                              <span class="d-block font-weight-600">02:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="cook">Cook Delivery At</label>
-                              <span class="d-block font-weight-600">11:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider-deliver">Rider Delivery At</label>
-                              <span class="d-block font-weight-600">11:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="product">Product</label>
-                              <span class="d-block font-weight-600">Thosai</span>
-                            </div>
-                          </div>
-                          
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="lati,long">Latitude,Longtitode</label>
-                              <span class="d-block font-weight-600">0.00005, 0.00045</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="status">Status</label>
-                              <span class="d-block font-weight-600">0.00005, 0.00045</span>
-                            </div>
+                          <div class="col-12">
+                            <label for="upload" class="btn btn-primary me-2 mb-4 w-100" tabindex="0">
+                              <span class="d-none d-sm-block">Upload New Photo</span>
+                              <i class="bx bx-upload d-block d-sm-none"></i>
+                              <input type="file" id="upload" class="account-file-input" hidden="" accept="image/png, image/jpeg">
+                            </label>
                           </div>
                         </div>
-                      </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary rounded-pill" data-bs-dismiss="modal">
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary rounded-pill">Save</button>
+                      </div>
                     </div>
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Address Details</h5>
-                    </div>
-                    <div class="card-body pt-0">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="door-no">Door No</label>
-                              <span class="d-block font-weight-600">1025</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="Street Name">Street Name</label>
-                              <span class="d-block font-weight-600">Akshya Nagar</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="state">State</label>
-                              <span class="d-block font-weight-600">karnataka</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="city">City</label>
-                              <span class="d-block font-weight-600">Bangalore</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="pic-code">Pincode</label>
-                              <span class="d-block font-weight-600">560016</span>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                   
                   </div>
                 </div>
-                
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Action</th>
+                        <th>Name</th>
+                        <th>Expire At</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>
+                          <a href="#"><span class="badge bg-label-secondary me-1"><i class='bx bx-block'></i></span></a>
+                          
+                        </td>
+                        <td>
+                          Ad One
+                        </td>
+                        <td>
+                          26/04/2023
+                        </td>
+                        <td><span class="badge bg-label-warning me-1">Inactive</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#"><span class="badge bg-label-success me-1"><i class='bx bx-link-alt'></i></span></a></td>
+                        <td>
+                          Ad Two
+                        </td>
+                        <td>
+                          27/04/2023
+                        </td>
+                        <td><span class="badge bg-label-info me-1">active</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#"><span class="badge bg-label-success me-1"><i class='bx bx-link-alt'></i></span></a></td>
+                        <td>
+                          Ad Three
+                        </td>
+                        <td>
+                          29/04/2023
+                        </td>
+                        <td><span class="badge bg-label-info me-1">active</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-           
             <!-- / Content -->
 
 

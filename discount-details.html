@@ -114,12 +114,12 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="sub-category.html" class="menu-link">
+              <a href="sub-category" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layer"></i>
                 <div data-i18n="Analytics">Sub-Category</div>
               </a>
             </li>
-            <li class="menu-item active">
+            <li class="menu-item ">
               <a href="order.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-smile"></i>
                 <div data-i18n="Analytics">Orders</div>
@@ -131,8 +131,8 @@
                 <div data-i18n="Analytics">Customers</div>
               </a>
             </li>
-            <li class="menu-item">
-              <a href="discount.html" class="menu-link">
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-happy"></i>
                 <div data-i18n="Analytics">Discount</div>
               </a>
@@ -241,7 +241,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="demo-inline-spacing d-flex justify-content-end mb-3">
-                <a href="order.html">
+                <a href="discount.html">
                   <button type="button" class="btn btn-dark rounded-pill">
                     <i class='bx bx-exit'></i> back
                   </button>
@@ -251,128 +251,52 @@
                 <div class="col-xl-12">
                   <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Order Details</h5>
-                      <i class='bx bx-pencil' ></i>
+                      <h5 class="mb-0">Create Discount List</h5>
                     </div>
-                    <div class="card-body py-0">
+                    <div class="card-body">
                       <form>
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-md-6">
                             <div class="mb-3">
-                              <label class="form-label m-0" for="order-no">Order No</label>
-                              <span class="d-block font-weight-600">#0001</span>
+                              <label class="form-label" for="basic-default-mobile">Cook Name</label>
+                              <select id="defaultSelect" class="form-select">
+                                <option value="1">John Doe</option>
+                                <option value="2">Charles Doe</option>
+                              </select>
                             </div>
                           </div>
-                          <div class="col-md-4">
+                          <div class="col-md-6">
                             <div class="mb-3">
-                              <label class="form-label m-0" for="customer">Customer</label>
-                              <span class="d-block font-weight-600">John Doe</span>
+                              <label class="form-label" for="basic-default-fullname">Offer Name</label>
+                              <select id="defaultSelect" class="form-select">
+                                <option value="1">Good Friday</option>
+                                <option value="2">Ramzan Eid</option>
+                                <option value="3">Diwali</option>
+                              </select>
                             </div>
                           </div>
-                          <div class="col-md-4">
+                          <div class="col-md-6">
                             <div class="mb-3">
-                              <label class="form-label m-0" for="rider-name">Rider Name</label>
-                              <span class="d-block font-weight-600">Bala</span>
+                              <label for="html5-datetime-local-input" class="col-md-2 col-form-label">EXPIRED AT</label>
+                        <div class="col-md-12">
+                          <input class="form-control" type="datetime-local" value="2021-06-18T12:30:00" id="html5-datetime-local-input">
+                        </div>
                             </div>
                           </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="price">Price</label>
-                              <span class="d-block font-weight-600">$1000</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="discount">Discount</label>
-                              <span class="d-block font-weight-600">25%</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="order-at">Order At</label>
-                              <span class="d-block font-weight-600">01:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider">Rider Piced At</label>
-                              <span class="d-block font-weight-600">02:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="cook">Cook Delivery At</label>
-                              <span class="d-block font-weight-600">11:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider-deliver">Rider Delivery At</label>
-                              <span class="d-block font-weight-600">11:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="product">Product</label>
-                              <span class="d-block font-weight-600">Thosai</span>
-                            </div>
-                          </div>
-                          
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="lati,long">Latitude,Longtitode</label>
-                              <span class="d-block font-weight-600">0.00005, 0.00045</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="status">Status</label>
-                              <span class="d-block font-weight-600">0.00005, 0.00045</span>
-                            </div>
+                          <div class="demo-inline-spacing d-flex justify-content-end">
+                            <a href="discount.html">
+                              <button type="button" class="btn btn-primary rounded-pill">
+                                Close
+                              </button>
+                            </a>
+                            
+                            <button type="button" class="btn btn-secondary rounded-pill">
+                              &nbsp; Save
+                            </button>
                           </div>
                         </div>
                       </form>
                     </div>
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Address Details</h5>
-                    </div>
-                    <div class="card-body pt-0">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="door-no">Door No</label>
-                              <span class="d-block font-weight-600">1025</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="Street Name">Street Name</label>
-                              <span class="d-block font-weight-600">Akshya Nagar</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="state">State</label>
-                              <span class="d-block font-weight-600">karnataka</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="city">City</label>
-                              <span class="d-block font-weight-600">Bangalore</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="pic-code">Pincode</label>
-                              <span class="d-block font-weight-600">560016</span>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                   
                   </div>
                 </div>
                 

@@ -46,10 +46,15 @@
     <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
+    <link rel="stylesheet" href="./ccs and js/owl.carousel.min.css">
+    <link rel="stylesheet" href="./ccs and js/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="./assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="./assets/css/demo.css" />
     <link rel="stylesheet" href="./assets/vendor/css/style.css">
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -76,7 +81,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
              
-              <span class="app-brand-text demo menu-text fw-bolder ms-2"><img src="./HOC LOGOs/1HOC logo XHDPI.png" alt=""></span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2"><img src="./assets/img/1HOC House of chefs Admin logo.png" alt=""></span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -92,6 +97,12 @@
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="banner.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-copy-alt"></i>
+                <div data-i18n="Analytics">Banner</div>
               </a>
             </li>
             <li class="menu-item">
@@ -126,13 +137,13 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="discount.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-happy"></i>
-                <div data-i18n="Analytics">Offers</div>
+                <div data-i18n="Analytics">Discount</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="reviews.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-message-detail"></i>
                 <div data-i18n="Analytics">Reviews</div>
               </a>
@@ -236,153 +247,626 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="demo-inline-spacing d-flex justify-content-end mb-3">
                 <a href="order.html">
-                  <button type="button" class="btn btn-dark">
+                  <button type="button" class="btn btn-dark rounded-pill">
                     <i class='bx bx-exit'></i> back
                   </button>
                 </a>
               </div>
               <div class="row">
                 <div class="col-xl-12">
-                  <div class="card mb-4">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Order Details</h5>
-                    </div>
-                    <div class="card-body pb-0">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="basic-default-fullname">Order No</label>
-                              <input type="text" class="form-control" id="basic-default-fullname" placeholder="Order No...">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="row">
+                      
+                        <div class="col-md-12">
+                          <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                              <h5 class="mb-0">Customer Details</h5>
                             </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="customer">Customer</label>
-                              <select id="defaultSelect" class="form-select">
-                                <option>Defalut</option>
-                                <option value="1">Customer 2</option>
-                                <option value="2">Customer 3</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="rider-name">Rider Name</label>
-                              <input type="text" class="form-control" id="rider-name" placeholder="Rider Name...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="price">Price</label>
-                              <input type="text" class="form-control" id="price" placeholder="Price...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="discount">Discount</label>
-                              <input type="text" class="form-control" id="discount" placeholder="Discount...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="order-at">Order At</label>
-                              <input type="text" class="form-control" id="order-at" placeholder="Order At...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="rider-pic-At">Rider Piced At</label>
-                              <input type="text" class="form-control" id="order-at" placeholder="Rider Piced At...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="cook">Cook Dilivery At</label>
-                              <input type="text" class="form-control" id="cook" placeholder="Cook Dilivery At...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="rider">Rider Dilivery At</label>
-                              <input type="text" class="form-control" id="rider" placeholder="Rider Dilivery At...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="basic-default-mobile">Product</label>
-                              <select id="defaultSelect" class="form-select">
-                                <option>Defalut</option>
-                                <option value="1">Product 1</option>
-                                <option value="2">Product 2</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="basic-default-address">Latitude , Longtitode</label>
-                              <input type="text" class="form-control" id="basic-default-address" disabled placeholder="Latitude , Longtitode...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="status">Status</label>
-                              <input type="text" class="form-control" id="status" placeholder="Status...">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <label class="form-label" for="basic-default-fullname">Name</label>
+                                <input type="text" class="form-control" id="basic-default-fullname" placeholder="Name...">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label" for="basic-default-fullname">Mobile</label>
+                                <input type="text" class="form-control" id="basic-default-fullname" placeholder="Mobile...">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label" for="basic-default-fullname">Address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Address..."></textarea>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label" for="customer">cook</label>
+                                <select id="defaultSelect" class="form-select">
+                                  <option value="1">John Doe</option>
+                                  <option value="2">Charles Doe</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </form>
-                    </div>
-
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Address Details</h5>
-                    </div>
-                    <div class="card-body">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="door-no">Door No</label>
-                              <input type="text" class="form-control" id="door-no" placeholder="Door No...">
+                        <div class="col-md-12">
+                          <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                              <h5 class="mb-0">Breakfast</h5>
                             </div>
+                            <div class="card-body pb-0">
+                              <div class="owl-carousel owl-theme gallery">
+                                <div class="item">
+                                  <a href="#">
+                                    <div class="card menu-card">
+                                      <div class="card-head">
+                                        <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                        <div class="offer-text">
+                                          <p>50% Off up to 100</p>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div class="card-menu-text">
+                                          <div class="card-text-header">
+                                            <h4>Lorem ipsum dolor</h4>
+                                          </div>
+                                          <div class="card-text-header mt-2">
+                                            <p>&#8377;50 for one</p>
+                                            <button type="button" class="btn btn-icon btn-outline-secondary">
+                                              <i class='bx bx-plus'></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <div class="card menu-card">
+                                      <div class="card-head">
+                                        <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                        <div class="offer-text">
+                                          <p>50% Off up to 100</p>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div class="card-menu-text">
+                                          <div class="card-text-header">
+                                            <h4>Lorem ipsum dolor</h4>
+                                          </div>
+                                          <div class="card-text-header mt-2">
+                                            <p>&#8377;50 for one</p>
+                                            <button type="button" class="btn btn-icon btn-outline-secondary">
+                                              <i class='bx bx-plus'></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <div class="card menu-card">
+                                      <div class="card-head">
+                                        <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                        <div class="offer-text">
+                                          <p>50% Off up to 100</p>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div class="card-menu-text">
+                                          <div class="card-text-header">
+                                            <h4>Lorem ipsum dolor</h4>
+                                          </div>
+                                          <div class="card-text-header mt-2">
+                                            <p>&#8377;50 for one</p>
+                                            <button type="button" class="btn btn-icon btn-outline-secondary">
+                                              <i class='bx bx-plus'></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <div class="card menu-card">
+                                      <div class="card-head">
+                                        <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                        <div class="offer-text">
+                                          <p>50% Off up to 100</p>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div class="card-menu-text">
+                                          <div class="card-text-header">
+                                            <h4>Lorem ipsum dolor</h4>
+                                          </div>
+                                          <div class="card-text-header mt-2">
+                                            <p>&#8377;50 for one</p>
+                                            <button type="button" class="btn btn-icon btn-outline-secondary">
+                                              <i class='bx bx-plus'></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <div class="card menu-card">
+                                      <div class="card-head">
+                                        <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                        <div class="offer-text">
+                                          <p>50% Off up to 100</p>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div class="card-menu-text">
+                                          <div class="card-text-header">
+                                            <h4>Lorem ipsum dolor</h4>
+                                          </div>
+                                          <div class="card-text-header mt-2">
+                                            <p>&#8377;50 for one</p>
+                                            <button type="button" class="btn btn-icon btn-outline-secondary">
+                                              <i class='bx bx-plus'></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <div class="card menu-card">
+                                      <div class="card-head">
+                                        <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                        <div class="offer-text">
+                                          <p>50% Off up to 100</p>
+                                        </div>
+                                      </div>
+                                      <div class="card-body">
+                                        <div class="card-menu-text">
+                                          <div class="card-text-header">
+                                            <h4>Lorem ipsum dolor</h4>
+                                          </div>
+                                          <div class="card-text-header mt-2">
+                                            <p>&#8377;50 for one</p>
+                                            <button type="button" class="btn btn-icon btn-outline-secondary">
+                                              <i class='bx bx-plus'></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="street">Street Name</label>
-                              <input type="text" class="form-control" id="street" placeholder="Street Name...">
+                          <div class="card-header d-flex justify-content-between align-items-center pt-0">
+                            <h5 class="mb-0">Lunch</h5>
+                          </div>
+                          <div class="card-body pb-0">
+                            <div class="owl-carousel owl-theme gallery">
+                              <div class="item">
+                                <a href="#">
+                                  <div class="card menu-card">
+                                    <div class="card-head">
+                                      <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                      <div class="offer-text">
+                                        <p>50% Off up to 100</p>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-menu-text">
+                                        <div class="card-text-header">
+                                          <h4>Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="card-text-header mt-2">
+                                          <p>&#8377;50 for one</p>
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class='bx bx-plus'></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="item">
+                                <a href="#">
+                                  <div class="card menu-card">
+                                    <div class="card-head">
+                                      <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                      <div class="offer-text">
+                                        <p>50% Off up to 100</p>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-menu-text">
+                                        <div class="card-text-header">
+                                          <h4>Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="card-text-header mt-2">
+                                          <p>&#8377;50 for one</p>
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class='bx bx-plus'></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="item">
+                                <a href="#">
+                                  <div class="card menu-card">
+                                    <div class="card-head">
+                                      <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                      <div class="offer-text">
+                                        <p>50% Off up to 100</p>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-menu-text">
+                                        <div class="card-text-header">
+                                          <h4>Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="card-text-header mt-2">
+                                          <p>&#8377;50 for one</p>
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class='bx bx-plus'></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="item">
+                                <a href="#">
+                                  <div class="card menu-card">
+                                    <div class="card-head">
+                                      <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                      <div class="offer-text">
+                                        <p>50% Off up to 100</p>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-menu-text">
+                                        <div class="card-text-header">
+                                          <h4>Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="card-text-header mt-2">
+                                          <p>&#8377;50 for one</p>
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class='bx bx-plus'></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="item">
+                                <a href="#">
+                                  <div class="card menu-card">
+                                    <div class="card-head">
+                                      <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                      <div class="offer-text">
+                                        <p>50% Off up to 100</p>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-menu-text">
+                                        <div class="card-text-header">
+                                          <h4>Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="card-text-header mt-2">
+                                          <p>&#8377;50 for one</p>
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class='bx bx-plus'></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="item">
+                                <a href="#">
+                                  <div class="card menu-card">
+                                    <div class="card-head">
+                                      <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                      <div class="offer-text">
+                                        <p>50% Off up to 100</p>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-menu-text">
+                                        <div class="card-text-header">
+                                          <h4>Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="card-text-header mt-2">
+                                          <p>&#8377;50 for one</p>
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class='bx bx-plus'></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="state">State</label>
-                              <input type="text" class="form-control" id="state" placeholder="State...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="city">City</label>
-                              <input type="text" class="form-control" id="city" placeholder="City...">
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="pin-code">Pin Code</label>
-                              <input type="text" class="form-control" id="pin-code" placeholder="Pin Code...">
-                            </div>
-                          </div>
-                          <div class="demo-inline-spacing d-flex justify-content-end">
-                            <button type="button" class="btn btn-primary">
-                              Close
-                            </button>
-                            <button type="button" class="btn btn-secondary">
-                              &nbsp; Save
-                            </button>
-                          </div>
                         </div>
-                      </form>
+                        <div class="card-header d-flex justify-content-between align-items-center pt-0">
+                          <h5 class="mb-0">Dinner</h5>
+                        </div>
+                        <div class="card-body pb-0">
+                          <div class="owl-carousel owl-theme gallery">
+                            <div class="item">
+                              <a href="#">
+                                <div class="card menu-card">
+                                  <div class="card-head">
+                                    <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                    <div class="offer-text">
+                                      <p>50% Off up to 100</p>
+                                    </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-menu-text">
+                                      <div class="card-text-header">
+                                        <h4>Lorem ipsum dolor</h4>
+                                      </div>
+                                      <div class="card-text-header mt-2">
+                                        <p>&#8377;50 for one</p>
+                                        <button type="button" class="btn btn-icon btn-outline-secondary">
+                                          <i class='bx bx-plus'></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <div class="card menu-card">
+                                  <div class="card-head">
+                                    <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                    <div class="offer-text">
+                                      <p>50% Off up to 100</p>
+                                    </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-menu-text">
+                                      <div class="card-text-header">
+                                        <h4>Lorem ipsum dolor</h4>
+                                      </div>
+                                      <div class="card-text-header mt-2">
+                                        <p>&#8377;50 for one</p>
+                                        <button type="button" class="btn btn-icon btn-outline-secondary">
+                                          <i class='bx bx-plus'></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <div class="card menu-card">
+                                  <div class="card-head">
+                                    <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                    <div class="offer-text">
+                                      <p>50% Off up to 100</p>
+                                    </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-menu-text">
+                                      <div class="card-text-header">
+                                        <h4>Lorem ipsum dolor</h4>
+                                      </div>
+                                      <div class="card-text-header mt-2">
+                                        <p>&#8377;50 for one</p>
+                                        <button type="button" class="btn btn-icon btn-outline-secondary">
+                                          <i class='bx bx-plus'></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <div class="card menu-card">
+                                  <div class="card-head">
+                                    <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                    <div class="offer-text">
+                                      <p>50% Off up to 100</p>
+                                    </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-menu-text">
+                                      <div class="card-text-header">
+                                        <h4>Lorem ipsum dolor</h4>
+                                      </div>
+                                      <div class="card-text-header mt-2">
+                                        <p>&#8377;50 for one</p>
+                                        <button type="button" class="btn btn-icon btn-outline-secondary">
+                                          <i class='bx bx-plus'></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <div class="card menu-card">
+                                  <div class="card-head">
+                                    <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                    <div class="offer-text">
+                                      <p>50% Off up to 100</p>
+                                    </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-menu-text">
+                                      <div class="card-text-header">
+                                        <h4>Lorem ipsum dolor</h4>
+                                      </div>
+                                      <div class="card-text-header mt-2">
+                                        <p>&#8377;50 for one</p>
+                                        <button type="button" class="btn btn-icon btn-outline-secondary">
+                                          <i class='bx bx-plus'></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <div class="card menu-card">
+                                  <div class="card-head">
+                                    <img class="card-img-top" src="./assets/img/menu-1 (1).jpg" alt="Card image cap">
+                                    <div class="offer-text">
+                                      <p>50% Off up to 100</p>
+                                    </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-menu-text">
+                                      <div class="card-text-header">
+                                        <h4>Lorem ipsum dolor</h4>
+                                      </div>
+                                      <div class="card-text-header mt-2">
+                                        <p>&#8377;50 for one</p>
+                                        <button type="button" class="btn btn-icon btn-outline-secondary">
+                                          <i class='bx bx-plus'></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                      </div>
+                        </div>
+                      </div>
                     </div>
                    
+
                   </div>
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                              <h5 class="mb-0">Cart</h5>
+                            </div>
+                            <div class="card-body pb-0">
+                              <div class="order-check d-flex align-items-center my-3">
+                                <div class="dlab-media">
+                                  <img src="./assets/img/menu-1-(1).png" alt="">
+                                </div>
+                                <div class="dlab-info">
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="dlab-title"><a href="javascript:void(0);">Pepperoni Pizza</a></h4>
+                                    <h4 class="text-primary ms-2">&#8377;50</h4>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <span>x1</span>
+                                    <div class="quntity">
+                                      <button data-decrease="">-</button>
+                                      <input data-value="" type="text" value="1">
+                                      <button data-increase="">+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="order-check d-flex align-items-center my-3">
+                                <div class="dlab-media">
+                                  <img src="./assets/img/menu-1-(1).png" alt="">
+                                </div>
+                                <div class="dlab-info">
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="dlab-title"><a href="javascript:void(0);">Pepperoni Pizza</a></h4>
+                                    <h4 class="text-primary ms-2">&#8377;50</h4>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <span>x1</span>
+                                    <div class="quntity">
+                                      <button data-decrease="">-</button>
+                                      <input data-value="" type="text" value="1">
+                                      <button data-increase="">+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="order-check d-flex align-items-center my-3">
+                                <div class="dlab-media">
+                                  <img src="./assets/img/menu-1-(1).png" alt="">
+                                </div>
+                                <div class="dlab-info">
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="dlab-title"><a href="javascript:void(0);">Pepperoni Pizza</a></h4>
+                                    <h4 class="text-primary ms-2">&#8377;50</h4>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <span>x1</span>
+                                    <div class="quntity">
+                                      <button data-decrease="">-</button>
+                                      <input data-value="" type="text" value="1">
+                                      <button data-increase="">+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="order-check d-flex align-items-center my-3">
+                                <div class="dlab-media">
+                                  <img src="./assets/img/menu-1-(1).png" alt="">
+                                </div>
+                                <div class="dlab-info">
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="dlab-title"><a href="javascript:void(0);">Pepperoni Pizza</a></h4>
+                                    <h4 class="text-primary ms-2">&#8377;50</h4>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between">
+                                    <span>x1</span>
+                                    <div class="quntity">
+                                      <button data-decrease="">-</button>
+                                      <input data-value="" type="text" value="1">
+                                      <button data-increase="">+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer border-top">
+                              <div class="d-flex align-items-center justify-content-between">
+                                <p>Discount</p>
+                                <h4 class="font-w500">-&#8377;20.00</h4>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h4 class="font-w500">Total</h4>
+                                <h3 class="font-w500 text-primary">&#8377;180.00</h3>
+                              </div>
+                              <a href="checkout-page.html" class="btn btn-primary btn-block w-100">Checkout</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                 
                 </div>
                 
               </div>
@@ -402,7 +886,33 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./assets/vendor/js/script.js"></script>
+<script>
+  $(document).ready(function () {
+    var owl = $('.gallery');
+    owl.owlCarousel({
+      nav: true,
+      dots: false,
+      //animateIn: 'fadeIn',
+      //animateOut: 'fadeOut',
+      autoplay: false,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: false,
+      mouseDrag: false,
+      loop: true,
+      responsive: {
+        0: { items: 1 },
+        480: { items: 1, margin: 0 },
+        640: { items: 1, margin: 10 },
+        767: { items: 1, margin: 0 },
+        768: { items: 1, margin: 20 },
+        1024: { items: 1, margin: 30 },
+        1280: { items: 3, margin: 30 },
+      }
+    });
+  });
+</script>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -413,6 +923,9 @@
 
     <script src="./assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
+
+     <!-- owl silser -->
+     <script src="./ccs and js/owl.carousel.js"></script>
 
     <!-- Vendors JS -->
     <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>

@@ -75,7 +75,7 @@
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
-             
+              
               <span class="app-brand-text demo menu-text fw-bolder ms-2"><img src="./assets/img/1HOC House of chefs Admin logo.png" alt=""></span>
             </a>
 
@@ -119,7 +119,7 @@
                 <div data-i18n="Analytics">Sub-Category</div>
               </a>
             </li>
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="order.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-smile"></i>
                 <div data-i18n="Analytics">Orders</div>
@@ -131,7 +131,7 @@
                 <div data-i18n="Analytics">Customers</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="discount.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-happy"></i>
                 <div data-i18n="Analytics">Discount</div>
@@ -233,162 +233,84 @@
               </ul>
             </div>
           </nav>
-
           <!-- / Navbar -->
-
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="demo-inline-spacing d-flex justify-content-end mb-3">
-                <a href="order.html">
-                  <button type="button" class="btn btn-dark rounded-pill">
-                    <i class='bx bx-exit'></i> back
-                  </button>
-                </a>
-              </div>
-              <div class="row">
-                <div class="col-xl-12">
-                  <div class="card mb-4">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Order Details</h5>
-                      <i class='bx bx-pencil' ></i>
-                    </div>
-                    <div class="card-body py-0">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="order-no">Order No</label>
-                              <span class="d-block font-weight-600">#0001</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="customer">Customer</label>
-                              <span class="d-block font-weight-600">John Doe</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider-name">Rider Name</label>
-                              <span class="d-block font-weight-600">Bala</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="price">Price</label>
-                              <span class="d-block font-weight-600">$1000</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="discount">Discount</label>
-                              <span class="d-block font-weight-600">25%</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="order-at">Order At</label>
-                              <span class="d-block font-weight-600">01:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider">Rider Piced At</label>
-                              <span class="d-block font-weight-600">02:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="cook">Cook Delivery At</label>
-                              <span class="d-block font-weight-600">11:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="rider-deliver">Rider Delivery At</label>
-                              <span class="d-block font-weight-600">11:05</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="product">Product</label>
-                              <span class="d-block font-weight-600">Thosai</span>
-                            </div>
-                          </div>
-                          
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="lati,long">Latitude,Longtitode</label>
-                              <span class="d-block font-weight-600">0.00005, 0.00045</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="status">Status</label>
-                              <span class="d-block font-weight-600">0.00005, 0.00045</span>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                      <h5 class="mb-0">Address Details</h5>
-                    </div>
-                    <div class="card-body pt-0">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="door-no">Door No</label>
-                              <span class="d-block font-weight-600">1025</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="Street Name">Street Name</label>
-                              <span class="d-block font-weight-600">Akshya Nagar</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="state">State</label>
-                              <span class="d-block font-weight-600">karnataka</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="city">City</label>
-                              <span class="d-block font-weight-600">Bangalore</span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label m-0" for="pic-code">Pincode</label>
-                              <span class="d-block font-weight-600">560016</span>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                   
-                  </div>
+            <div class="container-xxl flex-grow-1 container-p-y"> 
+              <div class="card">
+                <div class="card-header">
+                  <h5 >Discount</h5>
+                  <a href="discount-details.html">
+                    <button type="button" class="btn rounded-pill btn-primary">
+                      <span class="tf-icons bx bx-plus"></span>&nbsp; Add
+                     </button>
+                  </a>
+                  
                 </div>
-                
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Action</th>
+                        <th>Discount Name</th>
+                        <th>Cook Name</th>
+                        <th>Expired At</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td><a href="discount-view.html"><span class="badge bg-label-success me-1"><i class='bx bx-show'></i></span></a></td>
+                        <td>
+                          Good Friday
+                        </td>
+                        <td>
+                          John Doe
+                        </td>
+                        <td>
+                          26/04/2023
+                        </td>
+                        <td><span class="badge bg-label-warning me-1">Inactive</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="discount-view.html"><span class="badge bg-label-success me-1"><i class='bx bx-show'></i></span></a></td>
+                        <td>
+                          Ramzan Eid
+                        </td>
+                        <td>
+                          Barry Doe
+                        </td>
+                        <td>
+                          25/04/2023
+                        </td>
+                        <td><span class="badge bg-label-info me-1">active</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="discount-view.html"><span class="badge bg-label-success me-1"><i class='bx bx-show'></i></span></a></td>
+                        <td>
+                          Diwali
+                        </td>
+                        <td>
+                          Charles Doe
+                        </td>
+                        <td>
+                          22/04/2023
+                        </td>
+                        <td><span class="badge bg-label-info me-1">active</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-           
             <!-- / Content -->
-
-
             <div class="content-backdrop fade"></div>
           </div>
           <!-- Content wrapper -->
         </div>
         <!-- / Layout page -->
       </div>
-
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
